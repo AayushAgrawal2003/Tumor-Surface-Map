@@ -19,7 +19,7 @@ DIAMETER = 20
 PC_DENSITY = 10
 
 
-# Get the values of the tumor location
+# Get the values of the tumor location - This is the openCV model
 def vals(main):
     cimg = cv2.cvtColor(main,cv2.COLOR_GRAY2BGR)
     circles = cv2.HoughCircles(main,cv2.HOUGH_GRADIENT,1,20,
